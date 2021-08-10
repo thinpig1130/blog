@@ -49,8 +49,21 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-# - about.md
+header_pages:
+- about.md
+
+category_pages:
+- category_pages/java_lang.md
+- category_pages/java_grammer.md
+- category_pages/java_basic_lib.md
+- category_pages/java_8.md
+- category_pages/spring_framework.md
+- category_pages/spring_boot.md
+- category_pages/spring_basic_lib.md
+- category_pages/spring_etc_lib.md
+- category_pages/sample.md
+
+
 
 # Build settings
 theme: minima

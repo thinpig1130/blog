@@ -8,7 +8,10 @@
   line-height: $base-line-height * $base-font-size * 2.25;
 
   // Positioning context for the mobile navigation icon
-  position: relative;
+  // position: relative; // 삭제 2021.08.10
+  position: fixed; // 추가 2021.08.10
+  width: 100%; // 추가 2021.08.10
+  background-color: $background-color;
 }
 
 .site-title {
@@ -196,12 +199,12 @@
 }
 
 
-
 /**
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  // padding: $spacing-unit 0; // 삭제 2021.08.10
+  padding: ($spacing-unit+($spacing-unit * 1.865)) 0 $spacing-unit 0; // 추가 2021.08.10
   flex: 1 0 auto;
 }
 
@@ -287,6 +290,20 @@
 }
 
 
+/** 다애 추가 **/
+/**
+ * Category-menu
+ */
+ .category-menu {
+  background-color: #f66a0a;
+  position: absolute;
+  top: $spacing-unit + ($spacing-unit * 1.865);
+  right: $spacing-unit;
+  position: fixed;
+}
+
+
+
 .social-media-list {
   display: table;
   margin: 0 auto;
@@ -340,3 +357,4 @@
     width: calc(50% - (#{$spacing-unit} / 2));
   }
 }
+

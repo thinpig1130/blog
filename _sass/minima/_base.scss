@@ -55,7 +55,7 @@ hr {
  * `main` element
  */
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: flex; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 
@@ -192,8 +192,6 @@ pre {
   }
 }
 
-
-
 /**
  * Wrapper
  */
@@ -222,8 +220,6 @@ pre {
   display: table;
   clear: both;
 }
-
-
 
 /**
  * Icons
