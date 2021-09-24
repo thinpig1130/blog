@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: records
 ---
+
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -9,7 +10,7 @@ layout: default
   {{ content }}
   
 {% for category in site.categories %}
-  {%- if category[0] == page.category_link -%}
+  {% if category[0] == page.category_link %}
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {% for post in category[1] %}
@@ -26,7 +27,6 @@ layout: default
         </li>
       {% endfor %}
     </ul>
-  {%- endif -%}
+  {% endif %}
 {% endfor %}
-
 </div>

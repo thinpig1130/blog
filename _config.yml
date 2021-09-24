@@ -1,4 +1,4 @@
-title: 백발마녀 Records
+title: Kwon
 author:
   name: Kwon Da Ae
   email: tp1130@gmail.com
@@ -51,18 +51,21 @@ minima:
 # this and add the path to the pages in order as they should show up
 header_pages:
 - about.md
+- records.md
+# - category_pages/jpa_basic.md
 
 category_pages:
-- category_pages/java_lang.md
-- category_pages/java_grammer.md
-- category_pages/java_basic_lib.md
-- category_pages/java_8.md
-- category_pages/spring_framework.md
-- category_pages/spring_boot.md
-- category_pages/spring_basic_lib.md
-- category_pages/spring_etc_lib.md
-- category_pages/sample.md
+# - category_pages/java_lang.md
+# - category_pages/java_grammer.md
+# - category_pages/java_basic_lib.md
+# - category_pages/java_8.md
+# - category_pages/spring_framework.md
+# - category_pages/spring_boot.md
+# - category_pages/spring_basic_lib.md
+# - category_pages/spring_etc_lib.md
+# - category_pages/sample.md
 - category_pages/jpa_basic.md
+- category_pages/code_reviews.md
 
 
 

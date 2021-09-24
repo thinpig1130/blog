@@ -1,2 +1,129 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+/**
+ * Category-menu
+ */
+ .category-menu {
+    background-color: $code-background-color;
+    position: absolute;
+    box-sizing: border-box;
+
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    // display: none;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+  }
+
+  .category-menu ul{
+    list-style:none;      
+  }
+
+  @media screen and (min-width: $on-medium) {
+    .category-menu {
+        display: block;
+    }
+  }
+
+  .home{
+      width: 100%;
+  }
+
+  .page-content .wrapper{
+      width: 100%;
+      position: relative;
+  }
+
+
+
+
+  .category-nav {
+    position: absolute;
+    top: -10px;
+    right: $spacing-unit / 2;
+    border: 1px solid $border-color-01;
+    border-radius: 5px;
+    background-color: $code-background-color;
+  
+    .nav-trigger {
+      display: none;
+    }
+  
+    .menu-icon {
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+  
+      > svg path {
+        fill: $border-color-03;
+      }
+    }
+  
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+  
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+  
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+  
+    .page-link {
+      color: $text-color;
+      line-height: $base-line-height;
+      display: block;
+      padding: 5px 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    @media screen and (min-width: $on-large + 400px) {
+      position: absolute;
+      float: right;
+      border: none;
+      right: -200px;
+  
+      label[for="nav-trigger"] {
+        display: none;
+      }
+  
+      .menu-icon {
+        display: none;
+      }
+  
+      input ~ .trigger {
+        display: block;
+      }
+  
+      .page-link {
+        display: block;
+        padding: 0;
+        margin-left: 20px;
+        margin-bottom: 5px;
+
+      }
+      .trigger{
+          margin: 0px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 200px;
+          border-radius: 3px;
+      }
+    }
+
+  }
