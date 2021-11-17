@@ -74,8 +74,6 @@ category_pages:
 
 
 
-
-
 # Build settings
 theme: minima
 
@@ -85,7 +83,6 @@ minima:
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
-
 
 # paginate: 5
 # paginate_path: "/page:num/"
