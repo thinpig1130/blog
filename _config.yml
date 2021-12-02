@@ -58,18 +58,23 @@ category_pages:
 # - category_pages/java_lang.md
 # - category_pages/java_grammer.md
 # - category_pages/java_basic_lib.md
-# - category_pages/java_8.md
+- category_pages/java_8.md
+- category_pages/jpa_basic.md
+- category_pages/code_reviews.md
 # - category_pages/spring_framework.md
 # - category_pages/spring_boot.md
 # - category_pages/spring_basic_lib.md
 # - category_pages/spring_etc_lib.md
 # - category_pages/sample.md
+<<<<<<< Updated upstream
 - category_pages/jpa_basic.md
 - category_pages/rest_api.md
 - category_pages/code_reviews.md
 - category_pages/etc.md
 
 
+=======
+>>>>>>> Stashed changes
 
 
 
