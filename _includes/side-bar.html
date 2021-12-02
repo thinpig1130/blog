@@ -1,10 +1,4 @@
----
-layout: default
----
-
-{{ content }}
-
-{%- assign page_paths = site.category_pages | default: default_paths -%}
+{%- assign page_paths = site.[page.main_category] | default: default_paths -%}
 
 <nav class="category-nav">
   <input type="checkbox" id="nav-trigger-category" class="nav-trigger" />
@@ -25,4 +19,3 @@ layout: default
     {%- endfor -%}
   </div>
 </nav>
-
