@@ -50,12 +50,13 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
-- about.md
+- portfolio/about.md
+- portfolio/skills.md
+- portfolio/career.md
+- portfolio/projects.md
 - records.md
-# - category_pages/jpa_basic.md
 
 category_pages:
-# - category_pages/java_lang.md
 # - category_pages/java_grammer.md
 # - category_pages/java_basic_lib.md
 - category_pages/java_8.md
@@ -66,15 +67,24 @@ category_pages:
 # - category_pages/spring_basic_lib.md
 # - category_pages/spring_etc_lib.md
 # - category_pages/sample.md
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+- category_pages/java_lang.md
+>>>>>>> e6566ed1a344fbcde31149ae60e23818adf18df3
 - category_pages/jpa_basic.md
+- category_pages/msa.md
 - category_pages/rest_api.md
 - category_pages/code_reviews.md
 - category_pages/etc.md
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> Stashed changes
+=======
+- category_pages/sense.md
+>>>>>>> e6566ed1a344fbcde31149ae60e23818adf18df3
 
 
 
@@ -87,7 +97,6 @@ minima:
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
-
 
 # paginate: 5
 # paginate_path: "/page:num/"
