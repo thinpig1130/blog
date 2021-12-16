@@ -1,0 +1,30 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Base Style
+ * ----------------------------------------------------------------------------------------
+ */
+
+body {
+    background-color: #454545;
+}
+
+ul,ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'mont-heavy';
+    src : url('/assets/font/Mont-HeavyDEMO.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'noto-sans-cjk-kr';
+    src: url('/assets/font/NotoSansCJKkr-Bold.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poor+Story&display=swap');

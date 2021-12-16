@@ -1,0 +1,63 @@
+<div id="search-result-wrapper" class="hidden">
+  <!-- <h3>검색 결과</h3> -->
+  <div id="search-result"></div>
+</div>
+
+<style>
+#search-result-wrapper {
+  font-size: 2rem;
+  background-color: rgba(128,128,128,0);
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  text-align: end;
+}
+#search-result {
+  padding-left: 3rem;
+  list-style:none;
+}
+
+@media (max-width: 1200px) {
+  #search-result-wrapper {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    text-align: start;
+  }
+
+  #search-result {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #search-result-wrapper {
+    margin-top: 22rem !important;
+    text-align: start;
+  }
+}
+</style>
+
+<script>
+$(document).ready(function() {
+  input = $("#search-input");
+  wrapper = $("#search-result-wrapper");
+
+  wrapper.hide();
+  wrapper.removeClass("hidden");
+  input.on("keyup change", function() {
+    if (! input.val()) {
+      wrapper.slideUp("ease");
+    } else {
+      wrapper.slideDown("ease");
+    }
+  });
+});
+</script>
+
+<script src="{{ '/assets/js/simple-jekyll-search.min.js' | relative_url }}"></script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-result'),
+    json: "{{ '/search.json' | relative_url }}"
+  });
+</script>
